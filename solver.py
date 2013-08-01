@@ -16,7 +16,7 @@ def solve(letters, min_length=1, sort_by_length=False, contains=''):
         result = filter(lambda x: x.count(c) <= letters.count(c), result)
 
     if len(contains) > 0:
-        result = filter(lambda x: re.match(r'%s' % contains, x), result)
+        result = filter(lambda x: re.match(r'[%s]' % contains, x), result)
 
     if sort_by_length:
         result.sort(key=len, reverse=True)
