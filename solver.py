@@ -26,7 +26,7 @@ def solve(letters, min_length=1, sort_by_length=False, contains=''):
 
 def list_unique(seq):
     seen = set()
-    return [ x for x in seq if x not in seen and not seen.add(x)]
+    return [x for x in seq if x not in seen and not seen.add(x)]
 
 
 if __name__ == "__main__":
